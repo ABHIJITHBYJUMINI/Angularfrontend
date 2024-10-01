@@ -1,6 +1,6 @@
 <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
     <div>
-      <label for="input1">Authentication token:</label>
+      <label for="input1">Access token:</label>
       <input type="text" id="input1" formControlName="input1" />
       <div *ngIf="myForm.get('input1')?.invalid && myForm.get('input1')?.touched">
         Input 1 is required.

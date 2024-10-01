@@ -27,7 +27,7 @@ export class MyFormComponent implements OnInit{
 
   onSubmit(): void {
     if (this.myForm.valid) {
-      const apiUrl = 'https://1ngvtwg3-3000.inc1.devtunnels.ms/api/greet'; // Replace with your API endpoint
+      const apiUrl = 'https://r67d44gf-3000.inc1.devtunnels.ms/api/greet'; // Replace with your API endpoint
       this.http.post<any>(apiUrl, this.myForm.value).subscribe({
         next: (response: any) => {
           console.log('Data sent successfully:', response);
