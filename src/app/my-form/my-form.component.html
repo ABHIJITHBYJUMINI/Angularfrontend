@@ -1,6 +1,6 @@
 <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
     <div>
-      <label for="input1">Text Input 1:</label>
+      <label for="input1">Authentication token:</label>
       <input type="text" id="input1" formControlName="input1" />
       <div *ngIf="myForm.get('input1')?.invalid && myForm.get('input1')?.touched">
         Input 1 is required.
@@ -8,8 +8,8 @@
     </div>
   
     <div>
-      <label for="input2">Text Input 2:</label>
-      <input type="text" id="input2" formControlName="input2" />
+      <label for="input2">SYMBOL:</label>
+      <input type="text" id="symbol" formControlName="input2" />
       <div *ngIf="myForm.get('input2')?.invalid && myForm.get('input2')?.touched">
         Input 2 is required.
       </div>
@@ -17,8 +17,8 @@
   
     <div>
       <label>Option:</label>
-      <input type="radio" formControlName="option" value="Option1" /> Option 1
-      <input type="radio" formControlName="option" value="Option2" /> Option 2
+      <input type="radio" formControlName="option" value="Option1" /> CE
+      <input type="radio" formControlName="option" value="Option2" /> PE
     </div>
   
     <button type="submit" [disabled]="myForm.invalid">Submit</button>
